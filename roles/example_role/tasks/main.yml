@@ -1,0 +1,11 @@
+---
+# tasks/main.yml
+# Main tasks for the role
+
+- name: Include secrets from 1Password
+  ansible.builtin.include_tasks: tasks/secrets.yml
+  when: example_secrets is not defined
+
+- name: Example task
+  ansible.builtin.debug:
+    msg: "Example role is running with example_name={{ example_name }}"

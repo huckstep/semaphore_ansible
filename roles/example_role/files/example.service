@@ -1,0 +1,15 @@
+# files/example.service
+# Example systemd service file
+
+[Unit]
+Description=Example Service
+After=network.target
+
+[Service]
+Type=simple
+User=example
+ExecStart=/usr/bin/example
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

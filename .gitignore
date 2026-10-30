@@ -1,0 +1,25 @@
+# Ansible
+*.retry
+ansible.log
+
+# Vault files (encrypted secrets)
+vault/
+*.vault.yml
+*.vault.yaml
+
+# Environment files (no secrets in git)
+.env
+.env.*
+
+# Ansible collections
+collections/
+galaxy_install/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp

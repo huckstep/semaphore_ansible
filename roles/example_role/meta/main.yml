@@ -1,0 +1,24 @@
+---
+# meta/main.yml
+# Role metadata
+
+galaxy_info:
+  author: your name
+  description: example role
+  company: your company
+  license: MIT
+  min_ansible_version: "2.10"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+    - name: EL
+      versions:
+        - "8"
+        - "9"
+  galaxy_tags:
+    - example
+    - example_role
+
+dependencies: []

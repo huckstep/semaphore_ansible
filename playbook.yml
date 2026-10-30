@@ -1,0 +1,9 @@
+---
+# playbook.yml
+# Example playbook using the role
+
+- name: Example Playbook
+  hosts: all
+  become: true
+  roles:
+    - example_role

@@ -1,0 +1,8 @@
+---
+# handlers/main.yml
+# Handlers for the role
+
+- name: restart example service
+  ansible.builtin.systemd:
+    name: example
+    state: restarted
